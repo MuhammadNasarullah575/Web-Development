@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element & Class Selector</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .red{
+            background-color: greenyellow;
+        }
+        /* ID Selector */
+        #green{
+            background-color: blueviolet;
+        }
+        /* Child Selectros */
+        div > p {
+            color: rgb(83, 204, 235);
+            background-color: darkgoldenrod;
+        }
+        /* Descendant Selector */
+        div p{
+            color: rgb(0, 0, 0);
+            background-color: rgb(226, 15, 198);
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: yellowgreen;
+        }
+        /* Link initially is color mein dikhy ga */
+        a:link{
+            color: brown;
+        }
+        /* Active tab use hota jab kissi button ko click karain to color change karay */
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: rgb(7, 31, 240);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello! I am Element Selector</h1>
+            <p>Hello I am Child Selector, Div k under agar directly P ho ga to us par CSS apply ho ga</p>
+    </div>
+    <div class="red">
+        Hello! I am Class Selector
+    </div>
+    <div id="green">
+        Hello! I am ID Selector
+    </div>
+    <div>
+        <article>
+            <p>Hello! mein Descendant selector hon mein div k under koi r element bi aa jaye phir bi P tag par CSS apply karta hon</p>
+        </article>
+    </div>
+   
+        <a href="https://www.njp.gov.pk/jobs/live">Mein Anchor Tag hon muj mein Pseudo Selector Lgaya gya taky mein visit hoony k baad apna color change kar lon</a>
+
+</body>
+</html>

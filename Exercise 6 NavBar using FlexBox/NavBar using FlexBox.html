@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Using FlexBox</title>
+    <style>
+        .navbar{
+            width: 98vw;
+            background-color: rgb(236, 234, 234);
+            display: flex;
+            margin: 30px auto;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        .items{
+            height: 10vh;
+            /* border: 2px solid black; */
+            flex-grow: 1;
+            margin: 2px;
+            display: flex;
+            justify-content: center; 
+            align-content: center
+        }
+       
+
+        .item2{
+            flex-grow: 3;
+        }
+        .item9{
+            flex-grow: 4;
+        }
+
+        .item10 button{
+            margin: 10px 10px;
+            background-color: rgb(255, 208, 0);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .item11 img{
+            margin-top: 16px;
+            margin-right: 2px;
+        }
+        .item12 img{
+            margin-top: 16px;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="items item1">
+            <img src="Logo-removebg-preview.png" alt="UltrEdit Logo">
+        </div>
+
+        <div class="items item2"></div>
+
+        <div class="items item3">
+            <p>Products</p>
+        </div>
+
+        <div class="items item4">
+            <p>Buy</p>
+        </div>
+
+
+        <div class="items item5">
+            <p>Renew</p>
+        </div>
+
+
+        <div class="items item6">
+            <p>Support</p>
+        </div>
+
+
+        <div class="items item7">
+            <p>Learn</p>
+        </div>
+
+
+        <div class="items item8">
+            <p>Company</p>
+        </div>
+
+
+        <div class="items item9">
+        </div>
+
+
+        <div class="items item10">
+            <button>Download</button>
+        </div>
+
+
+        <div class="items item11">
+            <img src="world icon.png" alt="icon" width="15px" height="15px">
+            <p>English</p>
+        </div>
+
+
+        <div class="items item12">
+            <img src="search.png" alt="search-icon" width="15px" height="15px">
+        </div>
+
+       
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More on Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: yellow;
+        } */
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p,a,.box,[data-color="primary"] {
+            /*yeh grouping li gai k sary p,a, box r data-color= primary mein following style lgana */
+            /* margin-top: 45px;
+            padding-top: 45px;
+        } */ 
+
+         /* .box:nth-child(even){
+            background-color: blue;
+         } */
+
+         /* .box:nth-last-child(1){
+            background-color: rebeccapurple;
+         } */
+
+          .boxes::before{ /*before r after ko pseudo elements kha jata hai */
+            content: "Nasir is a Good Boy";
+            color: green;
+         }
+         .boxes::after{
+            content: "He learn Sigma Course, from Code with Harry";
+            color: brown;
+         }
+         ::selection{
+            color: aqua;
+            background-color: black;
+         }
+         .box::first-letter{
+            color: peru;
+            font-size: 45px;
+         }
+         input::placeholder{
+            color: crimson;
+         }
+        </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a First Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <input type="text" placeholder="Type some Text">
+    </div>
+</body>
+
+</html>

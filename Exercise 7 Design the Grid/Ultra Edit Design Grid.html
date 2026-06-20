@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Ultra Edit Site using Grid</title>
+    <style>
+        .navbar {
+            width: 98vw;
+            background-color: rgb(236, 234, 234);
+            display: flex;
+            position: sticky;
+            top: 10px;
+            margin: 30px auto;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .items {
+            height: 10vh;
+            /* border: 2px solid black; */
+            flex-grow: 1;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-content: center
+        }
+
+
+        .item2 {
+            flex-grow: 3;
+        }
+
+        .item9 {
+            flex-grow: 4;
+        }
+
+        .item10 button {
+            margin: 10px 10px;
+            background-color: rgb(255, 208, 0);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .item11 img {
+            margin-top: 16px;
+            margin-right: 2px;
+        }
+
+        .item12 img {
+            margin-top: 16px;
+            margin-right: 2px;
+        }
+
+        .main {
+            width: auto;
+            height: auto;
+            /* border: 2px solid black; */
+            display: grid;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            margin: 10px auto;
+            gap: 32px;
+
+        }
+
+        .card {
+            width: 250px;
+            height: 150px;
+            justify-items: center;
+            background-color: rgb(247, 245, 245);
+            border-radius: 6px;
+        }
+
+        .grid button:nth-child(even) {
+            background-color: skyblue;
+            margin-left: 5px;
+            border-radius: 6px;
+            padding: 8px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        .grid button:nth-child(odd) {
+            background-color: rgb(70, 230, 70);
+            margin-left: 5px;
+            border-radius: 6px;
+            padding: 8px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        .card p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+        }
+
+        @media only screen and (max-width: 455px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(1, 250px);
+                margin: 10px auto;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="items item1">
+            <img src="Logo-removebg-preview.png" alt="UltrEdit Logo">
+        </div>
+
+        <div class="items item2"></div>
+
+        <div class="items item3">
+            <p>Products</p>
+        </div>
+
+        <div class="items item4">
+            <p>Buy</p>
+        </div>
+
+
+        <div class="items item5">
+            <p>Renew</p>
+        </div>
+
+
+        <div class="items item6">
+            <p>Support</p>
+        </div>
+
+
+        <div class="items item7">
+            <p>Learn</p>
+        </div>
+
+
+        <div class="items item8">
+            <p>Company</p>
+        </div>
+
+
+        <div class="items item9">
+        </div>
+
+
+        <div class="items item10">
+            <button>Download</button>
+        </div>
+
+
+        <div class="items item11">
+            <img src="world icon.png" alt="icon" width="15px" height="15px">
+            <p>English</p>
+        </div>
+
+
+        <div class="items item12">
+            <img src="search.png" alt="search-icon" width="15px" height="15px">
+        </div>
+
+
+
+
+    </div>
+
+    <div class="main">
+        <div class="grid">
+            <div class="card">
+                <h3>English</h3>
+                <p>English</p>
+                <button>Download 32-bit</button>
+                <button>Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Deutsch</h3>
+                <p>German</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Italiano</h3>
+                <p>Italian</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Espanol</h3>
+                <p>Spanish</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>francais</h3>
+                <p>francy</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Portugeus brasileiro</h3>
+                <p>portugeus</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Japneise</h3>
+                <p>japany</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>korean</h3>
+                <p>korian</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Chinease</h3>
+                <p>chonease</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+            <div class="card">
+                <h3>Traditional Chinease</h3>
+                <p>traditional chiny</p>
+                <button>Download 32-bit</button>
+                <button class="green-button">Download 64-bit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

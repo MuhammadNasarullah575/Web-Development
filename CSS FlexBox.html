@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: start;
+            /* Bi default flex direction row hoti ji ki wja sy justify content Horizontally cheezon ko centre karta hai */
+            align-items: center;
+            /* Vertically cheezon ko centre karta hai r jab hmary pass only one line content hota tab hum allign item ka use karty */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /*jab content ziayada ho to new line mein lany k liye flex-wrap use karty */
+            /* align-content: flex-start;  */
+            /* jab content more than one line hota tab hum align-content use karty */
+            /* flex-flow: row wrap; */
+            /* gap: 30px; */
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            gap: 10px 10px;   /*Pehly row gap phir column gap */
+        }
+
+        .item {
+            /* flex-grow: 1;   */
+            /* Bi default flex grow ki value 0 hoti Is ka purpose sary blocks ko flex box mein equal sapce daina hota hai */
+            height: 92px;
+            width: 92px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+
+        /* By Default order ki value 0 hoti hai jitna order ki value increase ho gi utna wo content aakhir mein jaye ga */
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+        .order-7{
+            order: 7;
+        }
+
+        .item1{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+         .item2{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1">1</div>
+            <div class="item order-2">2</div>
+            <div class="item order-7">3</div>
+            <div class="item order-3">4</div>
+            <div class="item item1">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item item2">9</div>
+            <div class="item">1</div>
+            <!-- <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div> -->
+
+
+        </div>
+    </main>
+</body>
+
+</html>

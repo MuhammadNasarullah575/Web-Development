@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand Transform with animations</title>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            grid-template-rows: repeat(4,100px);
+            justify-content: center;
+            gap: 50px 50px;
+            margin: 30px 30px;
+        }
+        .cards{
+            width: 200px;
+            height: 100px;
+            /* border: 2px solid black; */
+            background-color: rgb(250, 84, 181);
+            color: white;
+            cursor: pointer;
+            justify-items: center;
+            align-content: center;
+        }
+       
+        .card1:hover{
+            transform: scaleX(1.5);
+            background-color: rgb(247, 199, 227);
+        }
+
+        .card2:hover{
+            transform: scaleY(1.5);
+            background-color: rgb(247, 199, 227);
+        }
+
+         .card3:hover{
+            transform: scale(1.5);
+            background-color: rgb(247, 199, 227);
+        }
+         .card4:hover{
+            transform: translateX(50px);
+            background-color: rgb(247, 199, 227);
+        }
+
+         .card5:hover{
+            transform: translateY(50px);
+            background-color: rgb(247, 199, 227);
+        }
+
+        .card6:hover{
+            transform: translateX(50px) translateY(50px);
+            background-color: rgb(247, 199, 227);
+        }
+
+         .card7:hover{
+            transform: matrix(50px);
+            background-color: rgb(247, 199, 227);
+        }
+        .card8:hover{
+            transform: rotate(90deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card9:hover{
+            transform: skew(10deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card10:hover{
+            transform: skewX(10deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card11:hover{
+            transform: skewY(10deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card12:hover{
+            transform: Matrix3D(10deg);
+            background-color: rgb(247, 199, 227);
+        }
+        .card13:hover{
+            transform: Translate3D(100px);
+            background-color: rgb(247, 199, 227);
+        }
+         .card14:hover{
+            transform: rotateY(180deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card15:hover{
+            transform: rotateX(180deg);
+            background-color: rgb(247, 199, 227);
+        }
+         .card16:hover{
+            transform: translateZ(50%);
+            background-color: rgb(247, 199, 227);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="cards card1">
+            <p>Scale X</p>
+        </div>
+
+        <div class="cards card2">
+            <p> Scale Y</p>
+        </div>
+
+
+        <div class="cards card3">
+            <p>Scale</p>
+        </div>
+
+
+        <div class="cards card4">
+            <p>translateX</p>
+        </div>
+
+
+        <div class="cards card5">
+            <p>translateY</p>
+        </div>
+
+
+        <div class="cards card6">
+            <p>translate</p>
+        </div>
+
+
+        <div class="cards card7">
+            <p>Matrix</p>
+        </div>
+
+
+        <div class="cards card8">
+            <p>Rotate</p>
+        </div>
+        <div class="cards card9">
+            <p>Skew</p>
+        </div>
+
+        <div class="cards card10">
+            <p>SkewX</p>
+        </div>
+
+        <div class="cards card11">
+            <p>SkewY</p>
+        </div>
+
+
+        <div class="cards card12">
+            <p>Matrix3D</p>
+        </div>
+
+
+        <div class="cards card13">
+            <p>Translate3D</p>
+        </div>
+
+
+        <div class="cards card14">
+            <p>RotateY</p>
+        </div>
+
+
+        <div class="cards card15">
+            <p>RotateX</p>
+        </div>
+
+
+        <div class="cards card16">
+            <p>TranslateZ</p>
+        </div>
+    </div>
+</body>
+</html>

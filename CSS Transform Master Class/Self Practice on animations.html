@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice on animations</title>
+    <style>
+        .container{
+            margin: 30px auto;
+            max-width: 1000px;
+            width: 90vw;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .box{
+            width: calc(20%);
+            text-align: center;
+            background-color: gainsboro;
+            margin: 20px 20px;
+            line-height: 130px;
+            cursor: pointer;
+        }
+        .pink{
+            background-color: rgba(125, 206, 71, 0.527);
+        }
+        .scaleX{
+            transform: scaleX(1);
+            transition: transform 0.5s ease;
+        }
+        .box:hover .scaleX{
+            transform: scaleX(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="pink scaleX">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+        <div class="box">
+            <div class="pink">Boxes</div>
+        </div>
+    </div>
+</body>
+</html>

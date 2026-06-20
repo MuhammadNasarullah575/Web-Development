@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: all; */
+            /* transition-property: transform, background-color; */
+
+
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+
+            /* Oper ki charon transition properties ko agar eik line mein likhna ho to eisy likhain gy */
+
+            transition: all 3s ease-in-out 1s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Transition (eik state sy dosri state mein smoothly jana) -->
+     <div class="container">
+        <div class="box translate"></div>
+     </div>
+</body>
+</html>

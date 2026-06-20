@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        :root{   
+            /* Basically hum ny yeh 2 global variable bnaye hum poori website mein inko use kar k color change kar sakty */
+            --color: green;
+            --seccolor: rgb(72, 245, 72);
+            --defpadd: 23px;
+            --defopacity: 0.2;
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+            color: white;
+        }
+
+        ul{
+            display: flex;  /* Data ko horizontal likhny k liye use hota */
+            
+        }
+
+        ul li{
+            opacity: var(--defopacity);
+            list-style: none;
+            padding: var(--defpadd);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: orange;       /* Local Variable */
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--seccolor,pink);  /*  agar seccolor k name sy variable na mily to pink color assign kar do */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <div class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dignissimos perferendis
+        beatae architecto dolore sint provident, quaerat, soluta, deserunt magni et! Sint reprehenderit porro ab eveniet
+        error labore, in ad fugiat. Reprehenderit est, libero adipisci aliquid distinctio aut eum velit fugit. Obcaecati
+        ut deserunt enim.</div>
+</body>
+
+</html>

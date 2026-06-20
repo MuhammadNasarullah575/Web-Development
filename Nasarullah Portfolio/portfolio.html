@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasarullah - Portfolio Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(4, 4, 160);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            /* text-align: center; */
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #0000ff;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .RightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blue;
+        }
+
+        #element {
+            color: lavender;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .separation {
+            background-color: #9c97f1;
+            height: 2px;
+            width: 100%;
+        }
+
+        .about-me {
+            max-width: 80vw;
+            margin: 40px auto;
+
+        }
+
+        .about {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .about-content{
+            margin: 15px 0;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+
+        }
+
+        footer {
+            background-color: #000000;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .education{
+            max-width: 80vw;
+            margin: 40px auto;
+        }
+        .education-flex{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nasarullah Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="">Home</a></li>
+
+                    <li><a href="">About</a></li>
+
+                    <li><a href="">Services</a></li>
+
+                    <li><a href="">Projects</a></li>
+
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! I'm Muhammad Nasarullah <span class="purple">Muhammad Nasarullah</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="Nasarullah-CV5.zip" download >
+                        <button class="btn">Download Resume</button>
+                    </a>
+
+                    <a href="https://github.com/MuhammadNasarullah575/Nasarullah">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="RightSection">
+                <img src="Sketch.png" alt="person-image">
+            </div>
+
+        </section>
+
+        <section class="separation"></section>
+
+        <section class="about-me">
+            <div class="about">About Me</div>
+            <div class="about-content">
+                I am a Full Stack Web Developer with a strong passion for building modern, responsive, and user-friendly
+                web applications. I specialize in both frontend and backend development, creating seamless digital
+                experiences from design to deployment.
+            </div>
+
+            <div class="about-content">
+                I enjoy turning ideas into real-world products using technologies like HTML, CSS, JavaScript, and modern
+                frameworks. On the backend, I focus on building secure and efficient APIs and managing databases to
+                ensure smooth application performance.
+            </div>
+
+
+            <div class="about-content">
+                I am continuously learning and improving my skills to stay updated with the latest web technologies and
+                industry trends. My goal is to become a highly skilled developer who builds impactful and scalable web
+                solutions.
+            </div>
+        </section>
+
+        <section class="separation"></section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-flex">
+                <div class="degree">BS Computer Engineering (BSCE)</div>
+                <div class="marks">3.23/4.00</div>
+            </div>
+            <div class="education-flex">
+                <div class="degree">Intermediate</div>
+                <div class="marks">709/1100</div>
+            </div>
+            <div class="education-flex">
+                <div class="degree">Matric</div>
+                <div class="marks">966/1100</div>
+            </div>
+        </section>
+
+        <section class="separation"></section>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="Developer">
+                    <div class="vertical-title">Advance Web application Development</div>
+                    <div class="vertical-desc">Completed a 3-month Web Development Internship focused on Frontend Development, building responsive and user-friendly websites using HTML, CSS, JavaScript, and Bootstrap.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fire.png" alt="Developer">
+                    <div class="vertical-title">AI Based Fire Detection System</div>
+                    <div class="vertical-desc">Developed an AI-Based Fire Detection System using YOLO and Computer Vision for real-time fire detection with automated email alerts.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Steam.png" alt="Developer">
+                    <div class="vertical-title">STEAM Education Training</div>
+                    <div class="vertical-desc">Completed STEAM Education Training, gaining knowledge of Science, Technology, Engineering, Arts, and Mathematics through hands-on learning and innovative teaching methodologies.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Teacher.png" alt="Developer">
+                    <div class="vertical-title">STEAM Trainer (Roll as A TechFellow)</div>
+                    <div class="vertical-desc">Served as a Tech Fellow, delivering STEAM education, mentoring students, and conducting technology-based learning activities.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Muhammad Nasarullah</h3>
+                <p>Full Stack Web Developer specializing in modern, responsive and scalable web applications.</p>
+            </div>
+            <div class="footer-Second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="footer-Third">
+                <ul>
+                    <li>Frontend Development</li>
+                    <li>Backend Development</li>
+                    <li>Responsive Website Design</li>
+                    <li>API Development</li>
+                    <li>Website Maintenance</li>
+                </ul>
+            </div>
+            <div class="footer-Fourth">
+                <ul>
+                    <li>nasarullah.lak@gmail.com</li>
+                    <li>+92-323-3937672</li>
+                    <li>GitHub</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            www.nasirPortfolio.com | All rights reserved &#169; CopyRight
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Engineer', 'Full Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

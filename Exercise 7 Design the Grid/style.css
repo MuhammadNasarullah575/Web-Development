@@ -1,0 +1,139 @@
+      .navbar {
+          width: 98vw;
+          background-color: rgb(236, 234, 234);
+          display: flex;
+          margin: 30px auto;
+          border: 2px solid black;
+          border-radius: 4px;
+      }
+
+      .items {
+          height: 10vh;
+          flex-grow: 1;
+          margin: 2px;
+          display: flex;
+          justify-content: center;
+          align-content: center
+      }
+
+
+      .item2 {
+          flex-grow: 3;
+      }
+
+      .item9 {
+          flex-grow: 4;
+      }
+
+      .item10 button {
+          margin: 10px 10px;
+          background-color: rgb(255, 208, 0);
+          border-radius: 10px;
+          cursor: pointer;
+      }
+
+      .item11 img {
+          margin-top: 16px;
+          margin-right: 2px;
+      }
+
+      .item12 img {
+          margin-top: 16px;
+          margin-right: 2px;
+      }
+
+      .first {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 23px;
+          margin: 70px;
+          font-family: sans-serif;
+      }
+
+      .first span {
+          font-size: 40px;
+      }
+
+      .first p {
+          font-size: 14px;
+          width: 42vw;
+          text-align: center;
+      }
+
+      .btn {
+          background-color: #00aad5;
+          padding: 14px 14px;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-weight: 700;
+          margin: 12px 0;
+          cursor: pointer;
+      }
+
+      .green {
+          background-color: green;
+      }
+
+      .flex {
+          display: flex;
+      }
+
+      .small {
+          font-size: 12px;
+      }
+
+      .second {
+          max-width: 72vw;
+          margin: auto;
+      }
+
+      .item {
+          padding: 23px;
+          background: rgb(238, 236, 236);
+          border-radius: 12px;
+          font-size: 20px;
+          text-align: center;
+      }
+
+      .item-lang {
+          font-weight: 700;
+          text-align: center;
+          padding-bottom: 36px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 12px;
+      }
+
+      .download :nth-child(2) {
+          font-size: 23px;
+      }
+
+      .download {
+          display: flex;
+          font-family: sans-serif;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .download img {
+          margin: 0 12px;
+      }
+
+      @media screen and (max-width:900px) {
+          .grid {
+              /* background-color: red; */
+              grid-template-columns: 1fr;
+          }
+      }
+
+      .btn a{
+        text-decoration: none;
+        color: white;
+      }

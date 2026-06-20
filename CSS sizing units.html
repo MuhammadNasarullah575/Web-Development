@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units of Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* html{
+            font-size: 12px;
+        }  */
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            /* Normally width humain view port width (vw) daini chahiye jo all mobile/tab screens par aa jaaein */
+            background-color: aquamarine;
+            margin: auto;
+            /*yeh div ko automatically center karti hai */
+            height: 10vh; /* screen ka 10% height lay ga */
+            
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            /* Normally width humain view port width (vw) daini chahiye jo all mobile/tab screens par aa jaaein */
+            background-color: aquamarine;
+            margin: 23px auto; /*  23px top & bottom k liye hai auto left & right k liye hai */
+            /* height: 80vh;  screen ka 80% height lay ga */
+            font-size: 16px;
+            min-height: 80vh;
+        }
+        .container p{
+             font-size: 1.5em; /*em parent class sy font size ko 2% add kary ga r rem root class sy itny hi percent increase kary ga */
+            width: 50%;   /*Parent container ki 50% width lay ga */
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(255, 0, 170);
+            font-size: 22px;
+            /* width: 100vmin;  Vmin ka matlab width/ height mein sy jo cheez minimum ho gi wo apply ho gi mobile k case mein Vmin width hai laptop k case mein height Vmin hai */
+            width: 80vmin;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        Mery laptop ki width 1354 px hai agar 1 digit bi oper gya to scroll bar aaye ga hum apni site ko responsive
+        bnany k liye view port width(vw) unit use karty
+    </div>
+    <div class="container">
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque incidunt, harum, nesciunt quisquam officia tenetur, culpa nisi voluptatum ullam molestiae itaque facere repellendus nulla asperiores quaerat vero magnam quasi voluptatibus aspernatur! Quibusdam adipisci atque veritatis voluptates ducimus doloremque ipsa a? Libero nam, culpa inventore nulla cumque mollitia rem aspernatur, doloribus harum ducimus beatae. Voluptates, consectetur nihil officiis cupiditate ipsa quisquam, necessitatibus commodi dolores illo totam reiciendis, similique quae minima velit corrupti fugit voluptate? Nesciunt, modi ex unde corporis eligendi optio itaque explicabo ullam esse ut deserunt est qui necessitatibus hic laudantium provident rerum repellat omnis, vel sint eius totam eaque! Fuga architecto est perspiciatis quod nobis blanditiis, libero, illo et ducimus illum animi beatae aspernatur necessitatibus numquam veritatis, dignissimos laboriosam ipsam id assumenda dicta. Pariatur quasi fuga dolorum accusantium alias facilis doloribus laborum ducimus quis, quia, quae repellat quos sit sunt incidunt perferendis illo et soluta deleniti eaque maiores unde aperiam. Cumque accusantium laboriosam consectetur libero doloribus eius repellat quo cum voluptatum expedita reprehenderit, temporibus architecto consequuntur aliquam ipsam ullam debitis unde veritatis consequatur asperiores sapiente veniam praesentium. Enim, eaque impedit minima alias assumenda eligendi iure debitis est quaerat, distinctio corrupti nisi vitae cumque eveniet obcaecati ex perspiciatis qui? Commodi velit obcaecati blanditiis aliquam quam corporis nulla accusantium quos beatae, qui repellendus magni consectetur! Exercitationem omnis ipsam est autem dignissimos libero corporis beatae veniam cupiditate ducimus debitis consequuntur, inventore consequatur! Aperiam suscipit, dolore corrupti architecto eaque reprehenderit maiores totam consequatur quo, dignissimos eveniet sequi molestias excepturi nisi enim quos in quibusdam libero et dolores ab repellat, minima illo. Nulla temporibus, veritatis iusto consequuntur eligendi consectetur fugit accusantium unde id dicta a, incidunt asperiores dolor possimus quas? Beatae a magnam aperiam molestias quaerat, cum iure iusto distinctio natus sit sed autem eum dolor voluptas similique esse consectetur illo recusandae at officia dolorem porro. Maiores dolorem pariatur tempora, odit aperiam possimus, atque voluptatem minima harum assumenda alias sequi obcaecati magni cumque expedita, consectetur facere laudantium molestias accusamus! Distinctio voluptatibus nemo voluptatem fugit in culpa dolores atque quasi a optio mollitia nesciunt aut, quo voluptas, asperiores error recusandae. Perspiciatis ipsum, sit temporibus quasi doloremque unde rem vel eum esse commodi earum sed magnam provident? Eum officiis, ipsa doloremque harum cum accusamus quod voluptates nam. Quae dolore reiciendis fugiat ea quo saepe magnam est beatae doloribus nostrum, obcaecati assumenda esse quia atque, blanditiis exercitationem, unde temporibus odio! Repellat debitis dicta iste doloribus, repudiandae iure quasi delectus quis dolore sapiente numquam quaerat sunt repellendus, incidunt ut maiores earum, nemo at pariatur dolor veritatis. Quisquam corporis enim reprehenderit ad esse porro totam, accusantium, sapiente odit eos aut, nesciunt quos illum et ipsum accusamus? Tempore laudantium harum voluptatum velit commodi. Voluptatum molestiae tempora eius libero accusamus quibusdam earum! Doloribus, deserunt earum? Maiores quas distinctio nisi earum iure odit, possimus eveniet quae similique mollitia nam asperiores corrupti sunt illum quaerat est facilis ad vero. Soluta maxime accusantium alias totam aspernatur, corporis eaque, id eos fugit libero excepturi iusto. Unde officia magni nobis corporis enim officiis facilis labore, quo delectus autem saepe recusandae sunt asperiores deleniti. Tempora hic non, possimus id nisi minima culpa iusto quisquam voluptatum cum aliquid, magnam aperiam voluptates unde quod obcaecati at corrupti repudiandae odit alias, maxime pariatur suscipit molestias earum? Id dolorem distinctio numquam iste incidunt provident harum, officiis velit modi, reprehenderit amet aspernatur aliquam enim doloremque aut animi nesciunt voluptas consequatur perferendis omnis placeat exercitationem quia corporis! Tempora culpa aliquid ad ipsa nobis, sunt consequatur ea illo hic enim qui corporis veritatis voluptas labore ipsam quia molestias adipisci alias impedit vel sapiente delectus nemo. Ipsam, numquam aliquid optio quas beatae voluptates, asperiores adipisci dolores doloremque natus, accusantium hic rem magnam. Temporibus hic voluptatem reiciendis rerum consequatur. Rerum vitae soluta aspernatur. Fugit impedit vitae aspernatur ducimus perspiciatis, est officia voluptatum blanditiis eum quos eveniet dolores iure non tempora sunt fugiat obcaecati aut illum pariatur atque labore? Illum non tenetur, aperiam, sunt, temporibus ipsum debitis aliquid ex mollitia animi eos enim! Itaque voluptates asperiores necessitatibus. Ex labore itaque consequuntur temporibus facere quisquam! Dicta, repellat aliquam asperiores sapiente commodi enim earum eius! Quidem ratione velit voluptatibus ea ducimus consequatur omnis odit earum distinctio ad quis et, tempore repudiandae, voluptas voluptates dignissimos adipisci fugit nam culpa fuga! Necessitatibus nemo excepturi saepe quibusdam odio maiores ratione laudantium accusamus in dolorum omnis explicabo, sapiente consequuntur hic quam tempora corrupti natus perferendis exercitationem. Odio beatae eaque, eius officia repellat unde perspiciatis, vel amet asperiores veritatis quaerat, excepturi laudantium sunt rerum! Sapiente, ex culpa! Molestias nemo vel reiciendis quia, nulla architecto ducimus fugit quo ratione doloremque nesciunt minus commodi quod ullam labore ab, suscipit, quae odio quisquam? Quidem ex, veritatis modi laudantium eveniet consectetur nisi in unde autem, quas voluptas aperiam delectus, labore nobis dicta sit totam voluptate id repudiandae atque magnam corporis repellendus excepturi harum! Laborum eaque, qui ab ullam odio nemo quis illo non, officiis repellat expedita esse voluptatum dicta soluta veniam quisquam autem laboriosam accusantium et voluptates impedit? Itaque cumque odit quos blanditiis recusandae, animi obcaecati nam incidunt eaque doloremque ut nulla, velit quaerat eos aut, tempore quod debitis ab distinctio! Corporis debitis rerum pariatur autem ad molestias vero nesciunt ut impedit, laboriosam esse labore magni praesentium minima laudantium ullam! Alias sunt accusamus tenetur natus quidem harum cupiditate recusandae a, quia voluptate maiores, voluptates eligendi totam tempore atque consequatur consectetur sapiente laboriosam excepturi molestias libero architecto. Explicabo, accusantium blanditiis vel quasi maiores quam facilis enim culpa necessitatibus repellendus error aspernatur. Officiis obcaecati harum nemo nostrum explicabo vitae temporibus nobis sequi ullam repellat nulla pariatur provident natus doloremque quia, ut distinctio est doloribus quod laborum? Ad eaque fugiat velit nostrum a laboriosam praesentium maxime architecto? Delectus fuga eum, libero ipsam architecto dolorem optio eius doloribus aspernatur? Culpa vitae rerum deleniti ut totam nobis, officiis assumenda expedita reiciendis neque voluptatem, velit similique iste autem aut ipsum et sint ab vel! Adipisci fuga cumque velit corporis asperiores eaque, quos numquam, veritatis maiores et doloribus quo possimus, nemo consectetur distinctio. Culpa architecto necessitatibus numquam. Dolorem accusamus illo quis alias aspernatur molestiae!
+        </p>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>

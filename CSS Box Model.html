@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            padding: 10px;
+            color: red;
+            margin: 25px;
+            border: 2px blue solid;
+            height: 200px;
+            box-sizing: border-box;   /* Is ka matlab yeh hai k element ki height padding r Border ko mila k hai */
+        }
+        .box2{
+            padding: 10px;
+            color: green;
+            margin: 25px; /*Margin Collapse basically jab 2 margin aapas mein milti hain to ziyada wali margin apply hoti */
+            border: 2px black solid;
+            height: 200px;
+            box-sizing: border-box;   /* Is ka matlab yeh hai k element ki height padding r Border ko mila k hai */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a Box</div>
+    <div class="box box2">I am another Box</div>
+</body>
+</html>

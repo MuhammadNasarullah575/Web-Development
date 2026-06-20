@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List using CSS</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            /* list-style-type: circle; */
+            background-color: rgb(9, 230, 238);
+            /* Abi tak background mein marker ni aaya usko bi include karny k liye hum list-style-position: inside; ka use karty */
+            list-style-position: inside;
+            border: 2px solid black;
+            padding: 23px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+         <ul style="display: flex;"> <!--List ko 1 line mein lany k liye display flex ka use kiya -->
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+</html>

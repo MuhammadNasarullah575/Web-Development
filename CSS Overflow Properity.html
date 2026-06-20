@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OverFlow Properity</title>
+    <style>
+        .box{
+            width: 40vw;
+            height: 40vh;
+            border: 2px solid black;
+            overflow: auto; /* Agar overflow auto paar set ho ga to zarorat parny par content mein khud hi scroll bar bna day ga */
+            white-space: nowrap; /* yeh content ko one line mein hi lkhta neechy nahi aany daita */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias commodi tempore quidem. Nemo porro ea laboriosam sed placeat, dolorum consequatur. Debitis exercitationem consequuntur est beatae sed facere ea eius minima quae quibusdam iusto vitae amet tempore assumenda explicabo quasi nulla dolore officia, quos voluptate non.
+    </div>
+</body>
+</html>

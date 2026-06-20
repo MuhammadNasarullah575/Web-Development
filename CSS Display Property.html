@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;  /*inline-block is liye use kiya taky width bi apni marzi sy set kar sakain */
+            margin: 34px;
+            padding: 45px;
+            width: 344px;
+        }
+        .box1{
+            /* display: none;    Box ko show ni kary ga */
+            /* visibility: hidden;  Box mein content show ni kary ga lakin space utni rakhy ga */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        Div By default Block level element hota hai r span by defalut inline element hota hai
+        <!-- Div by default eik block level element hai jo pory block ki space laita lakin hum isko inline element kesy bna sakty uska tareeka ider btaya jaaye ga -->
+    </div>
+    <div class="box">
+        I am Also a good box
+    </div>
+    <span> <!-- Span eik inline element hai -->
+        I am a good
+    </span>
+    <span>
+        Boy
+    </span>
+</body>
+
+</html>

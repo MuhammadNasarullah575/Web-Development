@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Positioned Property</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: azure;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Eev3bjxwWt2_dEzjgzSuSLNLIzal9ZSSrQ&s");
+
+             /* By Default small image par image repeat hona start ho jaati hai jisko avoid karny k liye hum background-repeat no-repeat use karty hain */
+             background-repeat: no-repeat;
+
+            /* background-position: top right; */
+            /* background-position: bottom right; */
+            /* background-position: center center; */
+            background-clip: border-box;
+        }
+
+
+        img{
+            width: 688px;
+            height: 300px;
+            /* Image box ko completely cover kary ga  */
+            object-fit: cover;
+            /* Image contain mein complete image aati but side sy container show hota rehta */
+            /* object-fit: contain; */
+            /* object position top right par top right view dikhaiye ga */
+            /* object-position: top right; */
+            /* object-position: bottom right; */
+            /* object fit fill by default property hai */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            /* object-position: 10px 20px; */
+            object-position: 10% 80%;
+            /* object-fit: none; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://thumbs.dreamstime.com/b/beautiful-nature-landscape-path-along-fresh-green-trees-track-edge-forest-lush-spring-day-120816288.jpg" alt=Nature-Image"> -->
+    </div>
+</body>
+</html>

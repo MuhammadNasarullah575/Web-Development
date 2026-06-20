@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Master Class</title>
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(0deg);
+            transform-origin: -50% -50%;
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(0.25turn); */
+            /* transform: rotateZ(0deg); */
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(3); */
+            /* transform: scaleZ(3); */
+            /* transform: scale3d(3); */
+            /* transform: skew(5deg); */
+            /* transform: skewY(10deg); */
+            /* transform: translateX(1000%); */
+            /* transform: translateY(50px); */
+            /* transform: translateY(100%) skew(5deg) translateX(50px); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
