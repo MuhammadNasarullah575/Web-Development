@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+</head>
+<body>
+    <h1>Congratulations! Now you are Part of Tijaaro</h1>
+
+    <script>
+        let h1 = document.querySelector("h1");
+        function wait(time){
+            return new Promise((resolve) => {
+              setTimeout(resolve,time);
+            })
+        }
+        async function changeColor(){
+
+            while(true){
+
+                let c1 = 0 + Math.random()*256;
+                let c2 = 0 + Math.random()*256;
+                let c3 = 0 + Math.random()*256;
+                let randomColor = `rgb(${c1}, ${c2}, ${c3})`;
+    
+                let randomTime = Math.ceil(1000 + Math.random()*3000);
+                
+                await wait(randomTime);
+    
+                h1.style.color = randomColor;
+            }
+        }
+
+        changeColor();
+    </script>
+</body>
+</html>

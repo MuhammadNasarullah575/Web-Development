@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 50vw;
+    height: 99vh;
+    /* border: 2px solid black; */
+    margin-left: auto;
+    margin-right: 30px;
+    overflow-y: auto;
+    position: relative;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 99%;
+    height: 170px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 10px 1px;
+}
+.card:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.card:hover .menu-btn{
+    background-color: gainsboro;
+}
+
+.thumbnail{
+
+    width: 35%;
+    height: 82%;
+    /* border: 0.5px solid black; */
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.textContent{
+    width: 55%;
+    height: 82%;
+    /* border: 2px solid black; */
+    margin: 10px 10px;
+    font-family: "Roboto", sans-serif;
+}
+.title{
+    font-family: "Roboto", sans-serif;
+     font-size: 14px;
+     font-weight: 100;
+     line-height: 20px;
+}
+.dots{
+    width: 3%;
+    height: 82%;
+    /* border: 2px solid black; */
+    margin: 10px 0;
+}
+.menu-btn{
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    border-radius: 50%;
+    background-color: black;
+}
+.views{
+    /* max-width: 50%; */
+    display: flex;
+    /* border: 2px solid black; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(96, 96, 96);
+}
+.dot2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2px;
+}

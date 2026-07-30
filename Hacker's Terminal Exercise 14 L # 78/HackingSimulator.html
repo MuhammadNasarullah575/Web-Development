@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(89, 26, 247);
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            max-width: 60vw;
+            width: 60vw;
+            height: 50%;
+            /* border: 2px solid yellow; */
+            padding: 15px;
+            text-align: center;
+        }
+        .box h1{
+            font-family: sans-serif;
+            color: yellow;
+            font-weight: 800;
+            margin: 20px;
+        }
+        .dots{
+            display: inline-block;
+            width: 50px;
+            text-align: left;
+        }
+        .dots::after{
+            content: "";
+            animation: loading 1s infinite;
+        }
+        @keyframes loading{
+            0%{
+                content: "";
+            }
+            25%{
+                content: ".";
+            }
+            50%{
+                content: "..";
+            }
+            75%{
+                content: "...";
+            }
+            100%{
+                content: "....";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+        
+       </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+     <script src="self-attempt.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Factorial Calculator</title>
+
+        <style>
+            body {
+                background-color: gainsboro;
+            }
+
+            .container {
+                max-width: 60vw;
+                margin: auto;
+                height: 70vh;
+                /* border: 2px solid black; */
+                border-radius: 10px;
+                background-color: rgb(198, 0, 247);
+                color: white;
+                position: relative;
+            }
+
+            .calculator {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+
+            .calculator input {
+                padding: 10px 25px;
+                width: 25vw;
+                font-size: large;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .button {
+                width: 100%;
+                height: calc(100% - 100px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn {
+                background-color: rgb(128, 243, 124);
+                color: black;
+                padding: 15px 30px;
+                border: none;
+                font-size: 20px;
+                border-radius: 100px;
+                cursor: pointer;
+            }
+
+            .pop-up-message{
+                display: none;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.699);
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .pop-up-content{
+                max-width: 40vw;
+                margin:  auto;
+                height: 200px;
+                background-color: white;
+                color: black;
+                position: relative;
+                top: 200px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cross{
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: white;
+                color: black;
+                border: none;
+                padding: 10px 12px;
+                cursor: pointer;
+            }
+            .cross:hover{
+                background-color: red;
+                color: white;
+            }
+            .result-message h2{
+                text-align: center;
+            }
+
+            .buttons{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+            }
+            .btn-2{
+                cursor: pointer;
+                padding: 5px 10px;
+            }
+            .factorial-result{
+                position: relative;
+                width: 90%;
+                height: 60px;
+                /* border: 2px solid black; */
+                margin: auto;
+
+                font-family: sans-serif;
+                font-size: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <h1>Factorial Calculator!</h1>
+
+                <div class="display">
+                    <input type="text" placeholder="Enter any number you want to find factorial">
+                </div>
+                
+                <div class="button">
+                    <button class="btn">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pop-up-message">
+            <div class="pop-up-content">
+                <button class="cross">X</button>
+                <div class="result-message">
+                    <h2>Result!</h2>
+                    <div class="factorial-result"></div>
+                </div>
+                <div class="buttons">
+                    <button class="btn-2 ok">OK</button>
+                    <button class="btn-2 cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <script src="script.js"></script> -->
+        <script src="reduce-method-factorial.js"></script>
+    </body>
+
+
+
+    </html>

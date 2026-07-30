@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(237, 237, 25);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // jab child par click kiya jaye ga to event listener us child par bi active ho ga us k parent par bi r us k parent par bi .... isy event bubbling bola jata hai
+        // Event bubbling ko stop karny k liye hum stop propagation method use karty hain 
+
+
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation(); // Event Bubbling ko stop karny k liye
+            alert("Child was Clicked")
+        })
+
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation(); // Event Bubbling ko stop karny k liye
+            alert("ChildContainer was Clicked")
+        })
+        
+        
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation(); // Event Bubbling ko stop karny k liye
+            alert("Container was Clicked")
+        })
+
+
+        // Set Time and Set Interval
+
+        function RandomColorGenerator(){
+            let val1 = Math.ceil(0 + Math.random()*255);
+            let val2 = Math.ceil(0 + Math.random()*255);
+            let val3 = Math.ceil(0 + Math.random()*255);
+
+            return `rgb(${val1},${val2},${val3})`;
+        }
+
+
+        // Set Interval sy har define interval k baad style change ho ga
+
+        // let a = setInterval(()=>{
+        //     document.querySelector(".childContainer").style.background = RandomColorGenerator();
+        // },1000);
+
+        // console.log(a);
+
+        // set TimOut sy sirf one time color change ho ga
+
+        let a = setTimeout(()=>{
+            document.querySelector(".childContainer").style.background = RandomColorGenerator();
+        },5000);
+
+        console.log(a);
+
+
+
+
+    </script>
+</body>
+
+</html>

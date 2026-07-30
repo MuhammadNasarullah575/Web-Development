@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <style>
+        body {
+            background-color: blue;
+            color: yellow;
+            font-weight: 900;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        const addItems = async (items) => {
+            await randomDelay();
+            let div = document.createElement("div");
+            div.append(items);
+            document.body.append(div);
+        }
+
+        const randomDelay = () => {
+            return new Promise((resolve, reject) => {
+                let timeout = Math.ceil(1 + Math.random() * 6);
+                setTimeout(() => {
+                    resolve();
+                }, timeout * 1000);
+
+            })
+        }
+
+        async function main() {
+
+            let t = setInterval(() => {
+              let last = document.body.lastElementChild;
+
+              if(last.innerHTML.endsWith("....")){
+                last.innerHTML = last.innerHTML.slice(0,last.innerHTML.length-4);
+              }
+              last.innerHTML += "."
+            }
+            ,700)
+
+
+            const statements = ["Initializing Hacking",
+                "Reading Your Files",
+                "Preperaing Your Files",
+                "Sending Personal Information to the server ",
+                "Cleaning up"
+            ]
+
+            for (const items of statements) {
+                await addItems(items);
+            }
+
+            clearInterval(t);
+
+        }
+
+        main();
+
+
+    </script>
+</body>
+
+</html>

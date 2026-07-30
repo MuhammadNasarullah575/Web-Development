@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 99%;
+            height: 99vh;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 35%;
+            height: 85%;
+            border: 1px solid black;
+            /* margin: auto; */
+            border-radius: 10px;
+        }
+
+        .login {
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            color: green;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            /* border: 2px solid black; */
+        }
+
+        .control-box {
+            margin: 5px;
+        }
+
+        .details input {
+            padding: 5px;
+            width: 30vw;
+        }
+
+        .btn {
+            color: white;
+            background-color: green;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .btn-sign {
+            background-color: gainsboro;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .warnings {
+            display: flex;
+            justify-content: flex-start;
+            width: 90%;
+        }
+
+        .warnings h5 {
+            color: red;
+            font-size: 12px;
+            font-weight: 100;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .control-box::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="login">
+                <h2>Register Now!</h2>
+            </div>
+
+            <div class="details">
+                <div>
+                    <p class="control-box">First Name</p>
+                    <input type="text" id="fname">
+                </div>
+
+                <div>
+                    <p class="control-box">Last Name</p>
+                    <input type="text" id="Lname">
+                </div>
+                <div>
+                    <p class="control-box">Mobile Number</p>
+                    <input type="tel" id="phoneNo">
+                </div>
+                <div>
+                    <p class="control-box">Email address</p>
+                    <input type="email" id="email">
+                </div>
+                <div class="Password ">
+                    <p class="control-box">Enter Password</p>
+                    <input type="password" id="password">
+                </div>
+                <div class="CPassword">
+                    <p class="control-box">Confirm your Password</p>
+                    <input type="password" id="confirmPassword">
+                </div>
+
+                <div class="warnings">
+                    <!-- <h5></h5> -->
+                </div>
+
+                <div class="buttons">
+                    <button class="btn " id="registerBtn">Register</button>
+                    <button class="btn btn-sign">
+                        <a href="signIn.html">Sign In</a>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+        let password = document.querySelector("#password");
+        let confirmPassword = document.querySelector("#confirmPassword");
+        let registerBtn = document.querySelector("#registerBtn");
+        let warnings = document.querySelector(".warnings");
+        let fname = document.querySelector("#fname");
+        let Lname = document.querySelector("#Lname");
+        let phoneNo = document.querySelector("#phoneNo");
+        let email = document.querySelector("#email");
+
+
+
+
+        registerBtn.addEventListener("click", function () {
+            let pass = password.value;
+            let Confirmpass = confirmPassword.value;
+            let First = fname.value;
+            let Last = Lname.value;
+            let Phone = phoneNo.value;
+            let Email = email.value;
+
+            let user = {
+                First: fname.value,
+                Last: Lname.value,
+                Phone: phoneNo.value,
+                Email: email.value,
+                pass: password.value,
+                Confirmpass: confirmPassword.value
+            }
+
+
+
+
+            if (First === "" || Last === "" || Phone === "" || Email === "" || pass === "" || Confirmpass === "") {
+                warnings.innerHTML = `<h5>Please fill all fields</h5>`
+            }
+
+            else if (pass.length < 8) {
+                warnings.innerHTML = `<h5>Password length must be 8 characters including at least one UpperCase one LowerCase and one special character</h5>`
+            }
+
+            else if (!/[A-Z]/.test(pass)) {
+                warnings.innerHTML = `<h5>Password must contain at least one uppercase letter</h5>`;
+            }
+
+            else if (!/[0-9]/.test(pass)) {
+                warnings.innerHTML = `<h5>Password must contain at least one digit</h5>`
+            }
+            else if (!/[^A-Za-z0-9]/.test(pass)) {
+                warnings.innerHTML = `<h5>Password must contain at least one special character</h5>`
+            }
+
+            else if (pass != Confirmpass) {
+                warnings.innerHTML = `<h5>Password doesn't match</h5>`
+            }
+
+
+            localStorage.setItem("user", JSON.stringify(user));
+
+            // let savedUser = JSON.parse(localStorage.getItem("user"));
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
