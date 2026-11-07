@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 76" width="100%" height="100%">
+  <defs>
+    <linearGradient id="postexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1E38" />
+      <stop offset="100%" stop-color="#071020" />
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E40" />
+      <stop offset="100%" stop-color="#FF6B00" />
+    </linearGradient>
+    <linearGradient id="boxLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#D94E00" />
+    </linearGradient>
+    <linearGradient id="boxRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA858" />
+      <stop offset="100%" stop-color="#FF821C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Modern Dark Navy Pill Container for maximum contrast -->
+  <rect width="240" height="76" rx="16" fill="url(#postexBg)" stroke="#1F3254" stroke-width="1.5" />
+
+  <!-- 3D Isometric Parcel Icon -->
+  <g transform="translate(18, 16)">
+    <!-- Top Face -->
+    <polygon points="22,6 38,14 22,22 6,14" fill="url(#boxTop)" />
+    <!-- Left Face -->
+    <polygon points="6,14 22,22 22,40 6,32" fill="url(#boxLeft)" />
+    <!-- Right Face -->
+    <polygon points="22,22 38,14 38,32 22,40" fill="url(#boxRight)" />
+    <!-- Center seam & tape -->
+    <path d="M22 6 L22 22 M6 14 L22 22 L38 14" stroke="#FFF" stroke-width="1.2" stroke-opacity="0.35" fill="none" />
+    <!-- Glowing Accent Dot -->
+    <circle cx="34" cy="8" r="3.5" fill="#00E5FF" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(68, 47)">
+    <text font-family="Montserrat, Inter, system-ui, sans-serif" font-weight="900" font-size="28" letter-spacing="-0.5">
+      <tspan fill="#FFFFFF">Post</tspan>
+      <tspan fill="#FF6B00">Ex</tspan>
+    </text>
+  </g>
+
+  <!-- Tagline / Subtitle -->
+  <text x="70" y="62" fill="#7E96BA" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="8" letter-spacing="1.8">
+    LOGISTICS &amp; FINTECH
+  </text>
+</svg>
+

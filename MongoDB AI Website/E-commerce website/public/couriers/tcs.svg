@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 76" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tcsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E51922" />
+      <stop offset="100%" stop-color="#B80D15" />
+    </linearGradient>
+    <filter id="tcsShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="240" height="76" rx="16" fill="url(#tcsBg)" filter="url(#tcsShadow)" />
+  
+  <!-- Subtle accent speed lines -->
+  <path d="M12 60 L32 16" stroke="rgba(255,255,255,0.18)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 60 L44 16" stroke="rgba(255,255,255,0.18)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Official TCS Lettering in italic bold cut -->
+  <g fill="#FFFFFF" transform="skewX(-14) translate(36, 0)">
+    <!-- T -->
+    <path d="M35 22 H75 V31 H59 V58 H47 V31 H35 Z" />
+    <!-- C -->
+    <path d="M112 24 C104 20 93 21 86 26 C77 33 76 47 84 54 C91 60 102 60 110 56 L108 47 C102 50 95 50 91 46 C87 42 88 35 93 31 C97 27 104 27 109 30 Z" />
+    <!-- S -->
+    <path d="M142 22 C134 21 123 23 118 29 C114 34 117 41 123 43 L131 46 C136 47 137 50 135 53 C132 57 124 57 118 53 L115 61 C122 65 133 65 140 60 C146 55 146 47 140 43 L132 40 C127 38 126 36 128 33 C130 29 137 29 142 32 Z" />
+  </g>
+
+  <!-- Tagline badge -->
+  <rect x="74" y="58" width="92" height="12" rx="4" fill="rgba(0,0,0,0.22)" />
+  <text x="120" y="67" fill="#FFFFFF" font-size="8.5" font-family="Arial, sans-serif" font-weight="900" letter-spacing="1.5" text-anchor="middle">
+    EXPRESS
+  </text>
+</svg>
